@@ -1,5 +1,5 @@
 {
-  "bids_dir": "./bids_input",
+  "bids_dir": "/input/bids_dataset_preprocessed",
   "task": "01",
   "task_is_rest": false,
   "interactive": false,
