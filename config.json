@@ -1,0 +1,35 @@
+{
+  "bids_dir": "./bids_input",
+  "task": "01",
+  "task_is_rest": false,
+  "interactive": false,
+  
+  "contrasts": [
+    ["Auditory/Left", "Auditory/Right"],
+    ["Visual/Left", "Visual/Right"]
+  ],
+  
+  "decode": true,
+  "decoding_which_epochs": "cleaned",
+  "decoding_epochs_tmin": -0.2,
+  "decoding_epochs_tmax": 0.5,
+  "decoding_metric": "roc_auc",
+  "decoding_n_splits": 5,
+  "decoding_time": true,
+  "decoding_time_decim": 1,
+  "decoding_time_generalization": false,
+  "decoding_time_generalization_decim": 1,
+  "decoding_csp": false,
+  "decoding_csp_times": null,
+  "decoding_csp_freqs": null,
+  "n_boot": 5000,
+  
+  "time_frequency_conditions": ["Auditory/Left", "Visual/Left"],
+  "time_frequency_freq_min": 8,
+  "time_frequency_freq_max": 40,
+  "time_frequency_cycles": [4, 5, 6, 7],
+  "time_frequency_subtract_evoked": false,
+  "time_frequency_baseline": [-0.2, 0.0],
+  "time_frequency_baseline_mode": "mean",
+  "time_frequency_crop": null
+}
